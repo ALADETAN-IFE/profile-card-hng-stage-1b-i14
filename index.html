@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stage 1b Profile Card</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/svg+xml" href="./image/favicon.svg" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <main class="page" data-testid="test-page-root">
+      <article class="profile-card" data-testid="test-profile-card">
+        <figure
+          class="profile-card__figure"
+          data-testid="test-profile-avatar-block"
+        >
+          <img
+            class="profile-card__avatar"
+            data-testid="test-user-avatar"
+            src="https://yt3.googleusercontent.com/qGrcViAdsmfdL8NhR03s6jZVi2AP4A03XeBFShu2M4Jd88k1fNXDnpMEmHU6CvNJuMyA2z1maA0=s900-c-k-c0x00ffffff-no-rj"
+            alt="Avatar of Aang from Avatar: The Last Airbender"
+          />
+          <figcaption
+            class="profile-card__caption"
+            data-testid="test-avatar-caption"
+          >
+            The Last Airbender
+          </figcaption>
+        </figure>
+
+        <div class="profile-card__content" data-testid="test-profile-content">
+          <header
+            class="profile-card__header"
+            data-testid="test-profile-header"
+          >
+            <h1 class="profile-card__name" data-testid="test-user-name">
+              Aang
+            </h1>
+            <p class="profile-card__bio" data-testid="test-user-bio">
+              A playful, lighthearted airbender who loves fun just as much as
+              he values peace, Aang blends curiosity, compassion, and courage
+              while mastering all four elements to protect others.
+            </p>
+          </header>
+
+          <section
+            class="profile-card__section"
+            data-testid="test-time-section"
+            aria-label="Current time section"
+          >
+            <h2
+              class="profile-card__section-title"
+              data-testid="test-time-title"
+            >
+              Current Time
+            </h2>
+            <p
+              class="profile-card__time"
+              data-testid="test-user-time"
+              aria-live="polite"
+            >
+              0
+            </p>
+          </section>
+
+          <nav
+            class="profile-card__section"
+            data-testid="test-user-social-links"
+            aria-label="Social links"
+          >
+            <h2
+              class="profile-card__section-title"
+              data-testid="test-social-title"
+            >
+              Social Links
+            </h2>
+            <ul class="chip-list" data-testid="test-social-list-items">
+              <li class="chip-list__item" data-testid="test-social-item-github">
+                <a
+                  class="chip-list__link"
+                  data-testid="test-user-social-github"
+                  href="https://avatar.fandom.com/wiki/Aang"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Open GitHub profile"
+                >
+                  Fandom
+                </a>
+              </li>
+              <li
+                class="chip-list__item"
+                data-testid="test-social-item-linkedin"
+              >
+                <a
+                  class="chip-list__link"
+                  data-testid="test-user-social-linkedin"
+                  href="https://en.wikipedia.org/wiki/Avatar:_The_Last_Airbender"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Open Avatar Wikipedia page"
+                >
+                  Wikipedia
+                </a>
+              </li>
+              <li class="chip-list__item" data-testid="test-social-item-x">
+                <a
+                  class="chip-list__link"
+                  data-testid="test-user-social-x"
+                  href="https://www.animationmagazine.net/2025/07/nickelodeon-to-celebrate-avatar-the-last-airbenders-20th-anniversary-at-comic-con/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Open Animation Magazine article"
+                >
+                  AnimationMag
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <section
+            class="profile-card__section"
+            data-testid="test-hobbies-section"
+            aria-label="Hobbies section"
+          >
+            <h2
+              class="profile-card__section-title"
+              data-testid="test-hobbies-title"
+            >
+              Hobbies
+            </h2>
+            <ul class="bullet-list" data-testid="test-user-hobbies">
+              <li
+                class="bullet-list__item"
+                data-testid="test-hobby-air-scooter"
+              >
+                Air scooter practice
+              </li>
+              <li class="bullet-list__item" data-testid="test-hobby-gliding">
+                Glider flying
+              </li>
+              <li class="bullet-list__item" data-testid="test-hobby-meditation">
+                Meditation
+              </li>
+            </ul>
+          </section>
+
+          <section
+            class="profile-card__section"
+            data-testid="test-dislikes-section"
+            aria-label="Dislikes section"
+          >
+            <h2
+              class="profile-card__section-title"
+              data-testid="test-dislikes-title"
+            >
+              Dislikes
+            </h2>
+            <ul class="bullet-list" data-testid="test-user-dislikes">
+              <li class="bullet-list__item" data-testid="test-dislike-war">
+                War and violence
+              </li>
+              <li class="bullet-list__item" data-testid="test-dislike-lies">
+                Dishonesty
+              </li>
+              <li
+                class="bullet-list__item"
+                data-testid="test-dislike-oppression"
+              >
+                Oppression
+              </li>
+            </ul>
+          </section>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
